@@ -33,10 +33,10 @@ def executa_simulacao(args):
                 if jogador.saldo > propriedade.custo_de_venda:
                     if jogador.estrategia_compra(propriedade):
                         compra_propriedade(jogador, propriedade)
-        if args.verbose:
-            imprimir_passo_a_passo(jogadores, tabuleiro)
+            if args.verbose:
+                imprimir_passo_a_passo(jogadores, tabuleiro)
         rodada += 1
     """Caso o jogo demore muito, como é de costume em jogos dessa natureza, o jogo termina na milésima rodada
 com a vitória do jogador com mais saldo. O critério de desempate é a ordem de turno dos jogadores nesta
 partida."""
-    return rodada, max(jogadores, key=lambda jogador: jogador.saldo)
+    return rodada, max(jogadores, key=lambda j: j.saldo)

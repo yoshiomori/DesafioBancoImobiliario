@@ -68,3 +68,21 @@ Uma execução do programa proposto deve rodar 300 simulações, imprimindo no c
 Para executar a simulação basta executar o arquivo main.py com o python:
 
 ```$ python main.py```
+
+É possível visualizar as simulações.
+
+```$ python main.py --verbose```
+
+Note que:
+
+```:-``` Representa uma propriedade sem dono
+
+```:0``` Representa a propriedade do jogador 0, jogador impulsivo
+
+```:1``` Representa a propriedade do jogador 1, jogador exigente
+
+```:2``` Representa a propriedade do jogador 2, jogador cauteloso
+
+```:3``` Representa a propriedade do jogador 3, jogador aleatório
+
+```3(545):2``` Representa o jogador 3 e seu saldo de 545 na propriedade do jogador 2

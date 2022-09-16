@@ -63,3 +63,8 @@ Uma execução do programa proposto deve rodar 300 simulações, imprimindo no c
 * Quantos turnos em média demora uma partida;
 * Qual a porcentagem de vitórias por comportamento dos jogadores;
 * Qual o comportamento que mais vence.
+
+## Instrução de Execução
+Para executar a simulação basta executar o arquivo main.py com o python:
+
+```$ python main.py```
